@@ -1,0 +1,85 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip} % nice spacing between paragraphs
+
+\usepackage{xcolor}
+\definecolor{heading}{HTML}{111111}
+\definecolor{accent}{HTML}{444444}
+
+% ---------- Section formatting ----------
+\titleformat{\section}
+  {\large\bfseries\color{heading}}
+  {}{0pt}{}
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% ---------- Compact lists ----------
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt}
+
+% ---------- Helper commands ----------
+\newcommand{\resumeItem}[1]{\item #1}
+\newcommand{\resumeItemBold}[2]{\item \textbf{#1:} #2}
+\newcommand{\resumeSubheading}[4]{
+  \noindent\textbf{#1} \hfill {\small #2}\\
+  {\small \textit{#3}} \hfill {\small #4}\vspace{4pt}
+}
+\newcommand{\resumeBulletList}{\begin{itemize}}
+\newcommand{\resumeBulletListEnd}{\end{itemize}}
+
+\begin{document}
+\begin{center}
+    {\LARGE \textbf{Akash K}}\\[4pt]
+    \small
+    \href{mailto:akashktesla@gmail.com}{akashktesla@gmail.com} \;|\;
+    +91-XXXXXXXXXX \;|\;
+    \href{https://github.com/akashktesla}{github.com/akashktesl} \;|\;
+\end{center}
+
+\section*{Summary}
+Data scientist with 3+ years of experience in machine learning, model evaluation, and data products. Comfortable owning E2E pipelines and collaborating cross-functionally to ship measurable impact.
+
+\section*{Skills}
+\textbf{Languages:} Python, SQL, Bash  \\
+\textbf{ML:} scikit-learn, XGBoost, PyTorch \\
+\textbf{Data:} Pandas, Spark, Airflow \\
+\textbf{Cloud/DevOps:} AWS, Sagemaker, bedrock, GCP, Docker, Git \\
+\textbf{Other:} Statistics, Experimentation (A/B), Visualization
+
+\section*{Experience}
+\resumeSubheading
+{Innova Solutions}{Hyderabad, IN}
+{Data Scientist}{Sep 2023 -- Present}
+\resumeBulletList
+  \resumeItem{Owned churn-prediction pipeline (XGBoost), improving recall @ 5\% FPR by 18\% and reducing monthly churn by 3.2\%.}
+  \resumeItem{Designed offline/online evaluation with stratified cross-validation and live A/B; cut model deployment cycle from 4 to 2 weeks.}
+  \resumeItem{Partnered with Product to define success metrics; delivered dashboards used by CX leadership (Looker + dbt).}
+\resumeBulletListEnd
+
+\section*{Projects}
+\resumeSubheading
+{Demand Forecasting Toolkit}{}
+{Open-source Maintainer}{2024}
+\resumeBulletList
+  \resumeItem{Created a modular time-series pipeline (Prophet / LightGBM) with backtesting harness; 1.7k GitHub stars.}
+  \resumeItem{Achieved MAPE improvements of 12–20\% across 3 public datasets via feature lags and cross-validation.}
+\resumeBulletListEnd
+
+\section*{Education}
+\noindent\textbf{Amrita University}, B.Tech in Computer and Communication Engineering 
+\hfill {\small 2019 -- 2023}\\
+Relevant Coursework: Probability \& Statistics, ML, Data Mining, DBMS
+
+\section*{Achievements}
+
+
+% ====================== FOOTER NOTE (optional, small) ======================
+\vspace{6pt}
+{\footnotesize References available upon request. \hfill Last updated: \today}
+
+\end{document}
