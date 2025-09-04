@@ -19,35 +19,22 @@
   {}{0pt}{}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 
-% ---------- Compact lists ----------
-\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt}
-
-% ---------- Helper commands ----------
-\newcommand{\resumeItem}[1]{\item #1}
-\newcommand{\resumeItemBold}[2]{\item \textbf{#1:} #2}
-\newcommand{\resumeSubheading}[4]{
-  \noindent\textbf{#1} \hfill {\small #2}\\
-  {\small \textit{#3}} \hfill {\small #4}\vspace{4pt}
-}
-\newcommand{\resumeBulletList}{\begin{itemize}}
-\newcommand{\resumeBulletListEnd}{\end{itemize}}
 
 \begin{document}
 \begin{center}
     {\LARGE \textbf{Akash K}}\\[4pt]
     \small
     \href{mailto:akashktesla@gmail.com}{akashktesla@gmail.com} \;|\;
-    +91-XXXXXXXXXX \;|\;
-    \href{https://github.com/akashktesla}{github.com/akashktesl} \;|\;
+    +91-8838704695 \;|\;
+    \href{https://github.com/akashktesla}{github.com/akashktesla} \;|\;
 \end{center}
 
 \section*{Summary}
-Data scientist with 3+ years of experience in machine learning, model evaluation, and data products. Comfortable owning E2E pipelines and collaborating cross-functionally to ship measurable impact.
 
 \section*{Skills}
 \textbf{Languages:} Python, SQL, Bash  \\
 \textbf{ML:} scikit-learn, XGBoost, PyTorch \\
-\textbf{Data:} Pandas, Spark, Airflow \\
+\textbf{Data:} Pandas, Spark, Snowflake, Teradata \\
 \textbf{Cloud/DevOps:} AWS, Sagemaker, bedrock, GCP, Docker, Git \\
 \textbf{Other:} Statistics, Experimentation (A/B), Visualization
 
@@ -55,27 +42,47 @@ Data scientist with 3+ years of experience in machine learning, model evaluation
 \resumeSubheading
 {Innova Solutions}{Hyderabad, IN}
 {Data Scientist}{Sep 2023 -- Present}
-\resumeBulletList
-  \resumeItem{Owned churn-prediction pipeline (XGBoost), improving recall @ 5\% FPR by 18\% and reducing monthly churn by 3.2\%.}
-  \resumeItem{Designed offline/online evaluation with stratified cross-validation and live A/B; cut model deployment cycle from 4 to 2 weeks.}
-  \resumeItem{Partnered with Product to define success metrics; delivered dashboards used by CX leadership (Looker + dbt).}
-\resumeBulletListEnd
 
 \section*{Projects}
+
 \resumeSubheading
-{Demand Forecasting Toolkit}{}
-{Open-source Maintainer}{2024}
+{3D Bin Packing Optimization}{}
+{Logistics Project – Steel Pipe Manufacturing}{2023}
 \resumeBulletList
-  \resumeItem{Created a modular time-series pipeline (Prophet / LightGBM) with backtesting harness; 1.7k GitHub stars.}
-  \resumeItem{Achieved MAPE improvements of 12–20\% across 3 public datasets via feature lags and cross-validation.}
+  \resumeItem{Solved a long-standing \textbf{3D bin packing problem} that had remained unsolved for 2 years despite attempts with linear programming.}
+  \resumeItem{Designed a custom heuristic using \textbf{First-Fit strategy combined with Genetic Algorithms}, achieving near-optimal packing efficiency.}
+  \resumeItem{Eliminated dependency on expensive third-party solvers and reduced logistics costs significantly through improved container utilization.}
+\resumeBulletListEnd
+
+\resumeSubheading
+{Retail Navigator}{}
+{AI Agent for Business Intelligence – Retail Company}{2024}
+\resumeBulletList
+  \resumeItem{Architected an \textbf{agentic BI system} that ingests retail sales data and generates interpretable insights for analysts and decision-makers.}
+  \resumeItem{Implemented custom \textbf{LLM orchestration (GPT-3.5)} with code execution sandbox and tool integrations—built before modern agent frameworks existed.}
+  \resumeItem{Enabled BI teams to query complex datasets conversationally, reducing manual SQL/reporting overhead and accelerating decision-making.}
+\resumeBulletListEnd
+
+\resumeSubheading
+{Healthcare Data Migration}{}
+{Data Engineering Project – Medical Care Company}{2024}
+\resumeBulletList
+  \resumeItem{Contributed to large-scale \textbf{data migration} following a company acquisition, integrating datasets across Snowflake and Teradata.}
+  \resumeItem{Developed robust \textbf{Python ingestion pipelines} and automation scripts for data validation, transformation, and ETL workflows.}
+  \resumeItem{Leveraged \textbf{AWS Glue} for orchestration and configured Snowflake + Teradata for accurate and secure data transfer.}
+  \resumeItem{Implemented job scheduling and monitoring with \textbf{Control-M}, ensuring reliability and compliance in data workflows.}
 \resumeBulletListEnd
 
 \section*{Education}
-\noindent\textbf{Amrita University}, B.Tech in Computer and Communication Engineering 
+\textbf{Amrita University}, B.Tech in Computer and Communication Engineering 
 \hfill {\small 2019 -- 2023}\\
 Relevant Coursework: Probability \& Statistics, ML, Data Mining, DBMS
 
 \section*{Achievements}
+\section*{Certifications}
+\noindent Google Cloud Professional Data Engineer \hfill {\small 2025}
+\section*{Awards}
+Innovation Award – Recognized for building automated ML pipeline adopted across teams
 
 
 % ====================== FOOTER NOTE (optional, small) ======================
