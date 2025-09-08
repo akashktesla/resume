@@ -4,12 +4,11 @@
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
 \usepackage{titlesec}
-\usepackage{tabularx}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{parskip} % nice spacing between paragraphs
-
+\usepackage{parskip}
 \usepackage{xcolor}
+
 \definecolor{heading}{HTML}{111111}
 \definecolor{accent}{HTML}{444444}
 
@@ -19,73 +18,108 @@
   {}{0pt}{}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 
+% ---------- Custom commands ----------
+\newcommand{\resumeSubheading}[4]{
+  \textbf{#1} \hfill #2\\
+  \textit{#3} \hfill \textit{#4}\\[2pt]
+}
+
+\newcommand{\resumeItem}[1]{\item #1}
+
+\newenvironment{resumeBulletList}{
+  \begin{itemize}[leftmargin=*,label={--}]
+}{
+  \end{itemize}
+}
 
 \begin{document}
+
+% ---------- HEADER ----------
 \begin{center}
     {\LARGE \textbf{Akash K}}\\[4pt]
     \small
     \href{mailto:akashktesla@gmail.com}{akashktesla@gmail.com} \;|\;
     +91-8838704695 \;|\;
-    \href{https://github.com/akashktesla}{github.com/akashktesla} \;|\;
+    \href{https://github.com/akashktesla}{github.com/akashktesla}\;|\;
+    \href{https://akashktesla.com}{akashktesla.com}
 \end{center}
 
+% ---------- SUMMARY ----------
 \section*{Summary}
+Data Scientist with experience delivering end-to-end solutions across \textbf{machine learning, optimization, and data engineering}. Skilled in building predictive models, designing custom heuristics, and architecting AI-driven systems for logistics, retail, and healthcare domains. Strong background in \textbf{time series forecasting, statistical analysis, and scalable data pipelines}, with hands-on expertise in Python, cloud platforms (AWS, GCP), and modern ML frameworks. Recognized for innovation and problem-solving in high-impact projects.
 
+% ---------- SKILLS ----------
 \section*{Skills}
 \textbf{Languages:} Python, SQL, Bash  \\
 \textbf{ML:} scikit-learn, XGBoost, PyTorch \\
 \textbf{Data:} Pandas, Spark, Snowflake, Teradata \\
-\textbf{Cloud/DevOps:} AWS, Sagemaker, bedrock, GCP, Docker, Git \\
+\textbf{Cloud/DevOps:} AWS, SageMaker, Bedrock, GCP, Docker, Git \\
 \textbf{Other:} Statistics, Experimentation (A/B), Visualization
 
+% ---------- EXPERIENCE ----------
 \section*{Experience}
 \resumeSubheading
-{Innova Solutions}{Hyderabad, IN}
-{Data Scientist}{Sep 2023 -- Present}
+{Innova Solutions}{Hyderabad, IN}{Data Scientist}{Sep 2023 -- Present}
 
+% ---------- PROJECTS ----------
 \section*{Projects}
 
 \resumeSubheading
-{3D Bin Packing Optimization}{}
-{Logistics Project – Steel Pipe Manufacturing}{2023}
-\resumeBulletList
-  \resumeItem{Solved a long-standing \textbf{3D bin packing problem} that had remained unsolved for 2 years despite attempts with linear programming.}
-  \resumeItem{Designed a custom heuristic using \textbf{First-Fit strategy combined with Genetic Algorithms}, achieving near-optimal packing efficiency.}
-  \resumeItem{Eliminated dependency on expensive third-party solvers and reduced logistics costs significantly through improved container utilization.}
-\resumeBulletListEnd
+{3D Bin Packing Optimization}{}{Logistics Project – Steel Pipe Manufacturing}{2023}
+\begin{resumeBulletList}
+  \resumeItem{Solved a long-standing \textbf{3D bin packing problem} that had remained unsolved 
+  for 2 years despite attempts with linear programming.}
+  \resumeItem{Designed a custom heuristic using \textbf{First-Fit strategy combined with Genetic 
+  Algorithms}, achieving near-optimal packing efficiency.}
+  \resumeItem{Eliminated dependency on expensive third-party solvers and reduced logistics costs 
+  significantly through improved container utilization.}
+\end{resumeBulletList}
+
 
 \resumeSubheading
-{Retail Navigator}{}
-{AI Agent for Business Intelligence – Retail Company}{2024}
-\resumeBulletList
-  \resumeItem{Architected an \textbf{agentic BI system} that ingests retail sales data and generates interpretable insights for analysts and decision-makers.}
-  \resumeItem{Implemented custom \textbf{LLM orchestration (GPT-3.5)} with code execution sandbox and tool integrations—built before modern agent frameworks existed.}
-  \resumeItem{Enabled BI teams to query complex datasets conversationally, reducing manual SQL/reporting overhead and accelerating decision-making.}
-\resumeBulletListEnd
+{Retail Navigator}{}{AI Agent for Business Intelligence – Retail Company}{2024}
+\begin{resumeBulletList}
+  \resumeItem{Architected an \textbf{agentic BI system} that ingests retail sales 
+  data and generates interpretable insights for analysts and decision-makers.}
+  \resumeItem{Implemented custom \textbf{LLM orchestration (GPT-3.5)} with code 
+  execution sandbox and tool integrations built before modern agentic frameworks existed.}
+  \resumeItem{Enabled BI teams to query complex datasets conversationally, reducing manual 
+  SQL/reporting overhead and accelerating decision-making.}
+\end{resumeBulletList}
+
+
 
 \resumeSubheading
-{Healthcare Data Migration}{}
-{Data Engineering Project – Medical Care Company}{2024}
-\resumeBulletList
+{Delivery Date Prediction with Time Series Models}{}{Logistics Project – Steel Pipe Manufacturing}{2024-2025}
+\begin{resumeBulletList}
+  \resumeItem{Analyzed delivery dates manually entered by operators, identifying significant \textbf{white noise and inconsistencies} that reduced forecasting accuracy.}
+  \resumeItem{Proposed a novel \textbf{heuristic standardization model} to generalize noisy inputs and establish a robust baseline.}
+  \resumeItem{Designed a hybrid approach to \textbf{regress on residuals} from the heuristic model, improving predictive power and enabling more reliable scheduling.}
+\end{resumeBulletList}
+
+
+\resumeSubheading
+{Healthcare Data Migration}{}{Data Engineering Project – Medical Care Company}{2025}
+\begin{resumeBulletList}
   \resumeItem{Contributed to large-scale \textbf{data migration} following a company acquisition, integrating datasets across Snowflake and Teradata.}
   \resumeItem{Developed robust \textbf{Python ingestion pipelines} and automation scripts for data validation, transformation, and ETL workflows.}
   \resumeItem{Leveraged \textbf{AWS Glue} for orchestration and configured Snowflake + Teradata for accurate and secure data transfer.}
   \resumeItem{Implemented job scheduling and monitoring with \textbf{Control-M}, ensuring reliability and compliance in data workflows.}
-\resumeBulletListEnd
+\end{resumeBulletList}
 
+% ---------- EDUCATION ----------
 \section*{Education}
-\textbf{Amrita University}, B.Tech in Computer and Communication Engineering 
-\hfill {\small 2019 -- 2023}\\
+\textbf{Amrita University}, B.Tech in Computer and Communication Engineering \hfill 2019 -- 2023\\
 Relevant Coursework: Probability \& Statistics, ML, Data Mining, DBMS
 
-\section*{Achievements}
+% ---------- CERTIFICATIONS & AWARDS ----------
 \section*{Certifications}
-\noindent Google Cloud Professional Data Engineer \hfill {\small 2025}
+Google Cloud Professional Machine Learning Engineer \hfill 2025
+
 \section*{Awards}
 Innovation Award – Recognized for building automated ML pipeline adopted across teams
 
-
-% ====================== FOOTER NOTE (optional, small) ======================
+% ---------- FOOTER ----------
 \vspace{6pt}
 {\footnotesize References available upon request. \hfill Last updated: \today}
 
