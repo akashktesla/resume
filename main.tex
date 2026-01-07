@@ -14,8 +14,8 @@
 
 % ---------- Section formatting ----------
 \titleformat{\section}
-  {\large\bfseries\color{heading}}
-  {}{0pt}{}
+{\large\bfseries\color{heading}}
+{}{0pt}{}
 \titlespacing*{\section}{0pt}{10pt}{6pt}
 
 % ---------- Custom commands ----------
@@ -28,20 +28,21 @@
 
 \newenvironment{resumeBulletList}{
   \begin{itemize}[leftmargin=*,label={--}]
-}{
-  \end{itemize}
+  }{
+\end{itemize}
 }
 
 \begin{document}
 
 % ---------- HEADER ----------
-\begin{center}
-    {\LARGE \textbf{Akash K}}\\[4pt]
-    \small
-    \href{mailto:akashktesla@gmail.com}{akashktesla@gmail.com} \;|\;
-    +91-8838704695 \;|\;
-    \href{https://github.com/akashktesla}{github.com/akashktesla}\;|\;
-    \href{https://akashktesla.com}{akashktesla.com}
+\begin{center} {
+  \LARGE \textbf{Akash K}}\\[4pt]
+  \small
+  \href{https://akashktesla.com}{akashktesla.com} \;|\;
+  \href{mailto:akashktesla@gmail.com}{akashktesla@gmail.com} \;|\;
+  \href{https://github.com/akashktesla}{github.com/akashktesla \;|\;
+    +91-8838704695 
+  }
 \end{center}
 
 % ---------- SUMMARY ----------
@@ -65,7 +66,7 @@ Data Scientist with experience delivering end-to-end solutions across \textbf{ma
 \section*{Projects}
 
 \resumeSubheading
-{3D Bin Packing Optimization}{}{Logistics Project – Steel Pipe Manufacturing}{2023}
+{3D Bin Packing Optimization}{}{Logistics Project – Gerdau}{2023}
 \begin{resumeBulletList}
   \resumeItem{Solved a long-standing \textbf{3D bin packing problem} that had remained unsolved 
   for 2 years despite attempts with linear programming.}
@@ -73,6 +74,8 @@ Data Scientist with experience delivering end-to-end solutions across \textbf{ma
   Algorithms}, achieving near-optimal packing efficiency.}
   \resumeItem{Eliminated dependency on expensive third-party solvers and reduced logistics costs 
   significantly through improved container utilization.}
+  \resumeItem{Leveraged \textbf{AWS SageMaker} for large-scale experimentation, training genetic 
+  algorithms across multiple configurations in parallel to accelerate convergence.}
 \end{resumeBulletList}
 
 
@@ -85,26 +88,40 @@ Data Scientist with experience delivering end-to-end solutions across \textbf{ma
   execution sandbox and tool integrations built before modern agentic frameworks existed.}
   \resumeItem{Enabled BI teams to query complex datasets conversationally, reducing manual 
   SQL/reporting overhead and accelerating decision-making.}
+  \resumeItem{Prototyped and benchmarked orchestration workflows on \textbf{GCP Vertex AI}, 
+  validating scalability before integrating with custom in-house infrastructure.}
 \end{resumeBulletList}
 
 
 
 \resumeSubheading
-{Delivery Date Prediction with Time Series Models}{}{Logistics Project – Steel Pipe Manufacturing}{2024-2025}
+{Delivery Date Prediction with Time Series Models}{}{Logistics Project – Gerdau}{2024-2025}
 \begin{resumeBulletList}
   \resumeItem{Analyzed delivery dates manually entered by operators, identifying significant \textbf{white noise and inconsistencies} that reduced forecasting accuracy.}
   \resumeItem{Proposed a novel \textbf{heuristic standardization model} to generalize noisy inputs and establish a robust baseline.}
   \resumeItem{Designed a hybrid approach to \textbf{regress on residuals} from the heuristic model, improving predictive power and enabling more reliable scheduling.}
+  \resumeItem{Developed, trained, and deployed time series models on \textbf{AWS SageMaker}, 
+  leveraging scalable infrastructure for faster experimentation and reproducible workflows.}
+
 \end{resumeBulletList}
 
 
 \resumeSubheading
-{Healthcare Data Migration}{}{Data Engineering Project – Medical Care Company}{2025}
+{Healthcare Data Migration}{}{Data Engineering Project – Mckesson}{2025}
 \begin{resumeBulletList}
   \resumeItem{Contributed to large-scale \textbf{data migration} following a company acquisition, integrating datasets across Snowflake and Teradata.}
   \resumeItem{Developed robust \textbf{Python ingestion pipelines} and automation scripts for data validation, transformation, and ETL workflows.}
   \resumeItem{Leveraged \textbf{AWS Glue} for orchestration and configured Snowflake + Teradata for accurate and secure data transfer.}
   \resumeItem{Implemented job scheduling and monitoring with \textbf{Control-M}, ensuring reliability and compliance in data workflows.}
+\end{resumeBulletList}
+
+\resumeSubheading
+{Onboarding Automation}{}{AI Automation Engineering Project – McKesson}{2025–2026}
+\begin{resumeBulletList}
+  \resumeItem{Designed and built an \textbf{AI-driven web automation extension} to automate complex onboarding workflows across internal web applications.}
+  \resumeItem{Integrated an \textbf{MCP (Model Context Protocol) server} with a \textbf{Playwright-based automation layer}, enabling autonomous UI navigation and task execution.}
+  \resumeItem{Developed a \textbf{custom bridge server} to securely translate AI decisions into deterministic browser actions.}
+  \resumeItem{Implemented end-to-end workflow orchestration with validation, retries, and failure handling to ensure reliability in production environments.}
 \end{resumeBulletList}
 
 % ---------- EDUCATION ----------
